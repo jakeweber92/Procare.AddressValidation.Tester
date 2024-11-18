@@ -1,0 +1,14 @@
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\bin\Debug\net8.0\Procare.AddressValidation.Tester.exe
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\bin\Debug\net8.0\Procare.AddressValidation.Tester.deps.json
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\bin\Debug\net8.0\Procare.AddressValidation.Tester.runtimeconfig.json
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\bin\Debug\net8.0\Procare.AddressValidation.Tester.dll
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\bin\Debug\net8.0\Procare.AddressValidation.Tester.pdb
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\obj\Debug\net8.0\Procare.AddressValidation.Tester.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\obj\Debug\net8.0\Procare.AddressValidation.Tester.AssemblyInfoInputs.cache
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\obj\Debug\net8.0\Procare.AddressValidation.Tester.AssemblyInfo.cs
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\obj\Debug\net8.0\Procare.AddressValidation.Tester.csproj.CoreCompileInputs.cache
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\obj\Debug\net8.0\Procare.AddressValidation.Tester.dll
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\obj\Debug\net8.0\refint\Procare.AddressValidation.Tester.dll
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\obj\Debug\net8.0\Procare.AddressValidation.Tester.pdb
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\obj\Debug\net8.0\Procare.AddressValidation.Tester.genruntimeconfig.cache
+C:\Users\jakew\Downloads\Procare.AddressValidation.Tester\obj\Debug\net8.0\ref\Procare.AddressValidation.Tester.dll
