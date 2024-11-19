@@ -20,7 +20,7 @@ public record struct AddressValidationRequest(
     string? Urbanization,
     string? ZipCodeLeading5,
     string? ZipCodeTrailing4)
-: IEquatable<AddressValidationRequest>
+: IEquatable<AddressValidationRequest>, IRequest
 {
     public string ToQueryString()
     {

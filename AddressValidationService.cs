@@ -24,10 +24,6 @@ public class AddressValidationService : BaseHttpService
 
     public async Task<string> GetAddressesAsync(AddressValidationRequest request, CancellationToken token = default)
     {
-        using var httpRequest = request.ToHttpRequest(this.BaseUrl);
-        using var response = await this.CreateClient().SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
-
-        return await response.Content.ReadAsStringAsync(token).ConfigureAwait(false);
+        return await this.SendWithRetries(request, token).ConfigureAwait(false);
     }
 }
