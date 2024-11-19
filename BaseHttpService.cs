@@ -113,7 +113,7 @@ public class BaseHttpService : IDisposable
         using var httpRequest = request.ToHttpRequest(this.BaseUrl);
 
         using var cancelTimeout = new CancellationTokenSource();
-        cancelTimeout.CancelAfter(750);
+        cancelTimeout.CancelAfter(timeoutMS);
 
         using var response = await this.CreateClient().SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, cancelTimeout.Token)
             .ConfigureAwait(false);
