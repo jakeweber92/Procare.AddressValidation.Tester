@@ -12,12 +12,8 @@ using System.Threading.Tasks;
 
 public class AddressValidationService : BaseHttpService
 {
-    public AddressValidationService(IHttpClientFactory httpClientFactory, bool disposeFactory, Uri baseUrl)
-        : this(httpClientFactory, disposeFactory, baseUrl, null, false)
-    {
-    }
 
-    protected AddressValidationService(IHttpClientFactory httpClientFactory, bool disposeFactory, Uri baseUrl, HttpMessageHandler? httpMessageHandler, bool disposeHandler)
+    public AddressValidationService(IHttpClientFactory httpClientFactory, bool disposeFactory, Uri baseUrl, HttpMessageHandler? httpMessageHandler, bool disposeHandler)
         : base(httpClientFactory, disposeFactory, baseUrl, httpMessageHandler, disposeHandler)
     {
     }
@@ -25,8 +21,7 @@ public class AddressValidationService : BaseHttpService
     public async Task<string> GetAddressesAsync(AddressValidationRequest request, CancellationToken token = default)
     {
         using var httpRequest = request.ToHttpRequest(this.BaseUrl);
-        using var response = await this.CreateClient().SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
+         using var response = await this.CreateClient().SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead, token).ConfigureAwait(false);
 
         return await response.Content.ReadAsStringAsync(token).ConfigureAwait(false);
     }
