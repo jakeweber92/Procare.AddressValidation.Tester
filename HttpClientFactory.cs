@@ -8,6 +8,10 @@ namespace Procare.AddressValidation.Tester;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Threading.Tasks;
+using System.Threading;
+using Polly;
+using Polly.Extensions.Http;
 
 public class HttpClientFactory : IHttpClientFactory
 {
@@ -36,12 +40,13 @@ public class HttpClientFactory : IHttpClientFactory
         }
         else if (!this.specificClients.TryGetValue(handler, out client))
         {
-            client = new HttpClient(handler, disposeHandler);
+            client = new HttpClient(handler, disposeHandler); 
             this.specificClients.Add(handler, client);
         }
 
         return client;
     }
+
 
     public void Dispose()
     {
